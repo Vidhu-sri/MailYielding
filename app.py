@@ -7,10 +7,10 @@ import base64
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
-
+load_dotenv()
 chat_id = os.getenv("CHAT_ID")
 auth_token = os.getenv("AUTH_TOKEN")
-userId  =  'vsrivarenya@gmail.com'
+userId  =  os.getenv('userId')
 
 def setup_cred():
     # subprocess.run(["python", 'quickstart.py'])
